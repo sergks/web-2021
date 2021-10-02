@@ -10,7 +10,10 @@
 </head>
 <body>
     <header class="container">
-        <div>Название компании</div>
+        <div>
+            Название компании
+            (<span class="counter">1</span>)
+        </div>
         <nav>
             <ul>
                 <li>Каталог</li>
@@ -34,6 +37,9 @@
                 <div>
                     <span class="price">1660 ₽</span>
                 </div>
+                <div class="btn-group">
+                    <button class="btn-buy" data-price="1660">Купить</button>
+                </div>
             </section>
             <section class="product-item">
                 <div>
@@ -46,7 +52,10 @@
                     Описание ...
                 </p>
                 <div>
-                    <span class="price">1660 ₽</span>
+                    <span class="price">1000 ₽</span>
+                </div>
+                <div class="btn-group">
+                    <button class="btn-buy" data-price="1000">Купить</button>
                 </div>
             </section>
             <section class="product-item">
@@ -141,5 +150,6 @@
             <div>+7 (904) 533-44-21</div>
         </div>
     </footer>
+    <script src="js/app.js" defer></script>
 </body>
 </html>

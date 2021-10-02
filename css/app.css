@@ -47,6 +47,21 @@ nav ul li {
     padding: 5px;
 }
 
+.products .product-item .btn-group {
+    margin-top: 25px;
+}
+
+.products .product-item .btn-buy {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+}
+
+.products .product-item .btn-buy.add {
+    background-color: red;
+}
+
 .row {
     display: flex;
 }
