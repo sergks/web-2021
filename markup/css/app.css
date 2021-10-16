@@ -1,0 +1,105 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 25px;
+    color: #fff;
+}
+
+header .brand {
+    font-size: 22px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products .product-item {
+    width: calc(25% - 50px);
+    padding: 25px;
+}
+
+.products .product-item img {
+    width: 100%;
+}
+
+.products .product-item h4 {
+    font-size: 20px;
+}
+
+.products .product-item h4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.products .product-item .price {
+    background-color: orange;
+    color: #fff;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+main {
+    padding: 0 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.products .product-item button {
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.products .product-item button:hover {
+    background-color: blue;
+}
+
+.products .product-item button.add-cart {
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .products .product-item {
+        width: calc(50% - 50px);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .products .product-item {
+        width: calc(100% - 50px);
+    }
+}
