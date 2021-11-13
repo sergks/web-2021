@@ -11,3 +11,14 @@ yarn build
 ```
 yarn copyfiles -a -u 1 "build/**/*.*" ../public
 ```
+
+### Docker
+Запустить контейнеры
+```
+docker-compose up -d
+```
+
+Остановить все контейнеры
+```
+docker stop $(docker ps -q)
+```
