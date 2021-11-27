@@ -39,7 +39,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 'superpass321!'
-      MYSQL_DATABASE: 'web'
+      MYSQL_DATABASE: 'web-db'
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'pass321!'
     networks:

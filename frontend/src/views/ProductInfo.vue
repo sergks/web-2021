@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Это страница товара {{ id }}</h1>
+    <section v-if="product">
+      <h1>{{ product.name }}</h1>
+    </section>
   </div>
 </template>
 
@@ -9,11 +11,13 @@ export default {
   name: "ProductInfo",
   data() {
     return {
-      id: null
+      product: null
     }
   },
   created() {
-    this.id = this.$route.params.id
+    const id = this.$route.params.id
+    this.$http.get('/products/' + id)
+      .then(response => this.product = response.data)
   }
 }
 </script>

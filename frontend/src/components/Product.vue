@@ -27,7 +27,12 @@ export default {
   props: ['product'],
   methods: {
     addToCart(product) {
-      this.product.inCart = !this.product.inCart
+      const params = {
+        id: product.id,
+        count: 1
+      }
+      this.$http.post('/cart', params)
+        .then(response => product.inCart = response.data.inCart)
     }
   }
 }

@@ -13,6 +13,9 @@
           <li>
             <router-link :to="{name: 'Contact'}">Контакты</router-link>
           </li>
+          <li>
+            <CartInfo></CartInfo>
+          </li>
         </ul>
       </nav>
     </header>
@@ -28,5 +31,8 @@
 </template>
 
 <script>
-
+import CartInfo from "./components/CartInfo";
+export default {
+  components: {CartInfo}
+}
 </script>

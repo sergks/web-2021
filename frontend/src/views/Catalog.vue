@@ -17,25 +17,12 @@ export default {
   components: {Product},
   data() {
     return {
-      products: [
-        {
-          id: 1,
-          name: 'Провод Rexant ШВВП 2x0.5мм2 5м',
-          price: 100,
-          inCart: false
-        },
-        {
-          id: 2,
-          name: 'Провод Rexant ШВВП 2x0.5мм2 10м',
-          price: 300,
-          inCart: false
-        }
-      ]
+      products: []
     }
   },
   created() {
-    /// response = get(...)
-    // this.products = response
+    this.$http.get('/products')
+      .then(response => this.products = response.data)
   }
 }
 </script>
