@@ -19,14 +19,4 @@ class Product extends Model
         'price',
         'image'
     ];
-
-    public function toArray()
-    {
-        return [
-            'id' => $this->id,
-            'name' => $this->name,
-            'price' => $this->price,
-            'inCart' => false
-        ];
-    }
 }

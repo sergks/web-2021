@@ -2,6 +2,7 @@
   <div>
     <section v-if="product">
       <h1>{{ product.name }}</h1>
+      <p>{{ product.price }}</p>
     </section>
   </div>
 </template>

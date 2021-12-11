@@ -29,10 +29,10 @@ export default {
     addToCart(product) {
       const params = {
         id: product.id,
-        count: 1
+        count: 10
       }
       this.$http.post('/cart', params)
-        .then(response => product.inCart = response.data.inCart)
+        .then(response => this.product.inCart = response.data.inCart)
     }
   }
 }
